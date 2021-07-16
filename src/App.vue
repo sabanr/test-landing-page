@@ -1,13 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <login-header />
 </template>
 
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md
+<script>
+import LoginHeader from "./components/LoginHeader.vue";
+export default {
+  name: "App",
+  components: {
+    "login-header": LoginHeader,
+  },
+  setup() {},
+};
 </script>
 
 <style>
